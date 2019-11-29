@@ -1,16 +1,28 @@
 <html>
   <head>
     <script src="https://cdn.jsdelivr.net/npm/vue@2.6.0"></script>
+    <link href="https://fonts.googleapis.com/css?family=Muli&display=swap" rel="stylesheet">
+    <style media="screen">
+      #app {
+        max-width: 960px;
+        margin: 0px auto;
+        font-family: 'Muli', sans-serif;
+      }
+    </style>
   </head>
   <body>
     <div id="app">
-      {{message}}
+      <h1>{{page.heading}}</h1>
+      <p v-html="page.content"></p>
     </div>
     <script type="text/javascript">
     var app = new Vue({
       el: '#app',
       data: {
-        message: 'What a page!'
+        page: {
+          heading: 'What a page!',
+          content: 'Hosted on <a href="https://github.com/ulfur/ulfur.github.io/" target="_blank">Github</a>'
+        }
       }
     })
     </script>
