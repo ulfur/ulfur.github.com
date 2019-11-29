@@ -2,18 +2,27 @@
   <head>
     <script src="https://cdn.jsdelivr.net/npm/vue@2.6.0"></script>
     <link href="https://fonts.googleapis.com/css?family=Muli&display=swap" rel="stylesheet">
-    <style media="screen">
-      #app {
-        max-width: 960px;
-        margin: 0px auto;
-        font-family: 'Muli', sans-serif;
-      }
-    </style>
+    <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
     <div id="app">
-      <h1>{{page.heading}}</h1>
-      <p v-html="page.content"></p>
+      <header>
+        <section>
+          <h1>{{page.heading}}</h1>
+        </section>
+      </header>
+      <main>
+        <section>
+          <p v-html="page.content"></p>
+        </section>
+      </main>
+      <footer>
+        <section>
+          <span fle>Hosted on <a href="https://github.com/ulfur/ulfur.github.io/" target="_blank">Github</a></span>
+          <span>&copy;2019</span>
+        </section>
+      </footer>
     </div>
     <script type="text/javascript">
     var app = new Vue({
@@ -21,7 +30,7 @@
       data: {
         page: {
           heading: 'What a page!',
-          content: 'Hosted on <a href="https://github.com/ulfur/ulfur.github.io/" target="_blank">Github</a>'
+          content: ''
         }
       }
     })
