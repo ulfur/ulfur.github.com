@@ -16,7 +16,7 @@
       <main>
         <section>
             <article :id="`article-${index}`" v-for="(post, index) in page.posts">
-              <h3>{{post.title}} </h3>
+              <h3>{{post.title}}</h3>
               <p>{{post.content}}</p>
             </article>
         </section>
@@ -29,16 +29,6 @@
       </footer>
     </div>
     <script type="text/javascript" src="js/posts.json"></script>
-    <script type="text/javascript">
-      var app = new Vue({
-        el: '#app',
-        data: {
-          page: {
-            heading: 'What a page!',
-            posts: wap_posts.slice(0,wap_posts.length)
-          }
-        }
-      })
-    </script>
+    <script type="text/javascript" src="js/app.js"></script>
   </body>
 </html>
