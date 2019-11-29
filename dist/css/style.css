@@ -20,11 +20,6 @@ header, footer {
 
 }
 
-main {
-  background-color: cyan;
-  color: white;
-}
-
 header h1 {
   font-size: 3em;
   text-shadow: 2px 2px 0px black;
@@ -53,8 +48,13 @@ main > section { min-height: 85vh; }
 footer > section { min-height: 5vh;}
 
 
+main {
+  background: repeating-linear-gradient(135deg,magenta, magenta 20px, cyan 20px, cyan 40px);
+}
+
 main > section {
-  color: black;
+  color: magenta;
+  background-color: cyan;
   flex-direction: column;
 }
 
