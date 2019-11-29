@@ -1,0 +1,15 @@
+var wap_posts = [
+  {
+    "title":"Snoochy",
+    "content":"Sorem ipsum dolor sit amet, consectetur adipiscing elit. Duis commodo et risus venenatis rhoncus. Etiam rutrum eros tellus, luctus eleifend justo pulvinar id. Nunc scelerisque quam eget aliquet dignissim. Phasellus cursus ullamcorper eros vel hendrerit. Maecenas varius risus et turpis porttitor, et viverra nulla eleifend. Fusce dictum pellentesque urna. Morbi quis tristique leo."
+  },
+  {
+    "title":"Booches",
+    "content":"Borem ipsum dolor sit amet, consectetur adipiscing elit. Duis commodo et risus venenatis rhoncus. Etiam rutrum eros tellus, luctus eleifend justo pulvinar id. Nunc scelerisque quam eget aliquet dignissim. Phasellus cursus ullamcorper eros vel hendrerit. Maecenas varius risus et turpis porttitor, et viverra nulla eleifend. Fusce dictum pellentesque urna. Morbi quis tristique leo."
+  },
+  {
+    "title":"Mewes",
+    "content":"Morem ipsum dolor sit amet, consectetur adipiscing elit. Duis commodo et risus venenatis rhoncus. Etiam rutrum eros tellus, luctus eleifend justo pulvinar id. Nunc scelerisque quam eget aliquet dignissim. Phasellus cursus ullamcorper eros vel hendrerit. Maecenas varius risus et turpis porttitor, et viverra nulla eleifend. Fusce dictum pellentesque urna. Morbi quis tristique leo."
+  },
+
+];

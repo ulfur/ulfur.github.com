@@ -52,6 +52,6 @@ main > section {
   flex-direction: column;
 }
 
-main > section > p {
+main > section > article {
   margin-bottom: 10px;
 }
