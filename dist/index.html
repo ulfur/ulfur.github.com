@@ -1,34 +1,118 @@
-<html>
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>What a page!</title>
-    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.0"></script>
-    <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/style.css">
+    <meta charset="utf-8">
+    <title></title>
+    <style media="screen">
+      * {
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: courier new;
+        font-size: 12px;
+        color: #46553f;
+        background-color: white;
+      }
+
+      header {
+        display: flex;
+        width: 100vw;
+        background-color: #77906b;
+        color: white;
+        min-height: 320px;
+      }
+
+      header .blurb {
+        flex: 1;
+        padding: 24px 24% 12px 12px;
+        font-size: 2.2em;
+      }
+
+      .logo {
+        color: #46553f;
+        background-color: white;
+        font-size: 2.5em;
+        font-weight: normal;
+        width: 240px; height: 240px;
+        padding: 12px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+      }
+
+      section {
+        width: 100vw;
+        min-height: 95vh;
+        display: flex;
+      }
+
+      section.slogan {
+        background-color: #77906b;
+        color: white;
+        font-size: 2em;
+        justify-content: space-around;
+        padding: 60px;
+        min-height: auto;
+      }
+
+      section > p {
+        padding: 24px;
+      }
+      section:nth-child(even) {
+        background-color: #77906b;
+        color: white;
+      }
+
+      hr {
+        margin: 2px 0px;
+        border-top: solid 1px #77906b;
+        border-left: none;
+        border-right: none;
+        border-bottom: none;
+      }
+
+      @media (orientation: portrait) {
+        header {
+          flex-direction: column;
+        }
+        header .blurb {
+          flex: 1;
+          padding: 24px 12px;
+          font-size: 1.6em;
+        }
+      }
+    </style>
   </head>
   <body>
-    <div id="app">
       <header>
-        <section>
-          <h1>{{page.heading}}</h1>
-        </section>
+        <div class="logo">
+            <div>python<em>.</em></div>
+            <div>systems</div>
+        </div>
+        <div class="blurb">
+          <em>python.systems</em>
+          is a small team of experienced industry experts with
+          decades of experience in designing and implementing python and django IT and web systems for
+          both private and public sector.
+        </div>
       </header>
-      <main>
-        <section>
-            <article :id="`article-${index}`" v-for="(post, index) in page.posts">
-              <h3>{{post.title}}</h3>
-              <p>{{post.content}}</p>
-            </article>
-        </section>
-      </main>
+      <hr>
+      <section class="slogan">in_indentation_we_trust</section>
+      <hr>
+      <section>
+        <p>
+          Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.
+          The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.
+        </p>
+      </section>
       <footer>
-        <section>
-          <span>Hosted on <a href="https://github.com/ulfur/ulfur.github.io/" target="_blank">Github</a></span>
-          <span>&copy;2019</span>
-        </section>
+        <div>Contact</div>
+        <div>About</div>
+        <div>&copy; 2020</div>
       </footer>
-    </div>
-    <script type="text/javascript" src="js/posts.json"></script>
-    <script type="text/javascript" src="js/app.js"></script>
   </body>
 </html>
