@@ -75,6 +75,23 @@
         border-bottom: none;
       }
 
+      footer {
+        display: flex;
+        flex-direction: row;
+        background-color: #77906b;
+        color: white;
+        padding: 24px;
+        justify-content: space-between;
+
+      }
+
+      footer > div {
+
+
+        font-size: 1.4em;
+        font-weight: bold;
+      }
+
       @media (orientation: portrait) {
         header {
           flex-direction: column;
@@ -110,9 +127,14 @@
         </p>
       </section>
       <footer>
-        <div>Contact</div>
-        <div>About</div>
-        <div>&copy; 2020</div>
+        <div class="right">
+          <div>Contact</div>
+          <div>About</div>
+        </div>
+        <div class="left">
+          <div>&copy; 2020</div>
+        </div>
+
       </footer>
   </body>
 </html>
